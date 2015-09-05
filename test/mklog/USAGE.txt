@@ -1,0 +1,5 @@
+Run:
+
+$ python loggenerator.py foo.log 60
+
+this should append message to foo.log every minute. Assumes that mklog.py is in the same directory.

@@ -1,0 +1,145 @@
+SYNC.PY		|| 02 Sep 2015 13:57:14 >> data sort path path_sortpath_data does NOT EXIST
+DISKGUARD.PY	|| 02 Sep 2015 13:57:14 disk usage:1000MB free from 50MB !!!!!! Na disku dochazi misto :  
+SYNC.PY		|| 02 Sep 2015 13:57:14	 >>   Start of Upload
+SERVERSETUP.PY	|| 02 Sep 2015 13:57:14 slozka path_image neexistuje
+RUN.PY		|| 02 Sep 2015 13:57:14Data synchronisation system was started.
+SORT.PY	||!02 Sep 2015 13:57:14 data source path pathpath_data does NOT EXIST
+SYNC.PY	|| 02 Sep 2015 13:57:14 Start of synchronisation 
+SERVERSETUP.PY	|| 02 Sep 2015 13:57:14 slozka path_audio neexistuje 
+RUN.PY		|| 02 Sep 2015 13:57:14Data synchronisation system was started.
+SYNC.PY		|| 02 Sep 2015 13:57:15 >> data sort path path_sortpath_data does NOT EXIST
+SORT.PY	||	 >> 2015090213 Konec sort.py - 
+SERVERSETUP.PY	|| 02 Sep 2015 13:57:15 slozka path_data neexistuje 
+ 
+ 
+SORT.PY	||!02 Sep 2015 13:57:15 audio source path pathpath_audio does NOT EXIST
+SERVERSETUP.PY	|| 02 Sep 2015 13:57:15 Konec server setup 
+SYNC.PY		|| 02 Sep 2015 13:57:15  >> audio sort path path_sortpath_audio does NOT EXIST
+SORT.PY	||!02 Sep 2015 13:57:15 audio source path pathpath_audio does NOT EXIST
+SERVERSETUP.PY	|| 02 Sep 2015 13:57:15 slozka path_audio neexistuje 
+SERVERSETUP.PY	|| 02 Sep 2015 13:57:16 slozka path_data neexistuje 
+SYNC.PY		|| 02 Sep 2015 13:57:16 >> data sort path path_sortpath_data does NOT EXIST
+SYNC.PY	|| 02 Sep 2015 13:57:16 Internet connection is NOT available
+SORT.PY	||!02 Sep 2015 13:57:16 image source path pathpath_image does NOT EXIST
+SYNC.PY		|| 02 Sep 2015 13:57:16  >> audio sort path path_sortpath_audio does NOT EXIST
+
+SYNC.PY	|| 02 Sep 2015 13:57:16 Start of synchronisation 
+DISKGUARD.PY	|| 02 Sep 2015 13:57:16 disk usage:1000MB free from 50MB !!!!!! Zacalo mazani disku :  
+
+DISKGUARD.PY	|| 02 Sep 2015 13:57:16 disk usage:1000MB free from 50MB !!!!!! Na disku dochazi misto :  
+SERVERSETUP.PY	|| 02 Sep 2015 13:57:17 slozka path_image neexistuje
+SERVERSETUP.PY	|| 02 Sep 2015 13:57:17 Zacatek server setup 
+SYNC.PY		|| 02 Sep 2015 13:57:17	 >>    Finish of upload 
+SERVERSETUP.PY	|| 02 Sep 2015 13:57:17 slozka path_audio neexistuje 
+SERVERSETUP.PY	|| 02 Sep 2015 13:57:17 slozka path_audio neexistuje 
+ 
+
+SORT.PY	||!02 Sep 2015 13:57:17 audio source path pathpath_audio does NOT EXIST
+SORT.PY	||	 >> 2015090213 Konec sort.py - 
+SYNC.PY	|| 02 Sep 2015 13:57:17 Internet connection is NOT available
+SORT.PY	||	 >> 2015090213 Konec sort.py - 
+SYNC.PY		|| 02 Sep 2015 13:57:18	 >>    Finish of upload 
+SYNC.PY	|| 02 Sep 2015 13:57:18 Internet connection is NOT available
+SYNC.PY	|| 02 Sep 2015 13:57:18 Internet connection is NOT available
+
+DISKGUARD.PY	|| 02 Sep 2015 13:57:18 disk usage:1000MB free from 50MB !!!!!! Zacalo mazani disku :  
+
+SORT.PY	||!02 Sep 2015 13:57:18 image source path pathpath_image does NOT EXIST
+SORT.PY	||	 >> 2015090213 Konec sort.py - 
+DISKGUARD.PY	|| 02 Sep 2015 13:57:19 disk usage:1000MB free from 50MB !!!!!! Na disku dochazi misto :  
+SERVERSETUP.PY	|| 02 Sep 2015 13:57:19 Konec server setup 
+SERVERSETUP.PY	|| 02 Sep 2015 13:57:19 Konec server setup 
+SYNC.PY		|| 02 Sep 2015 13:57:19  >> audio sort path path_sortpath_audio does NOT EXIST
+DISKGUARD.PY	|| 02 Sep 2015 13:57:19 disk usage:1000MB free from 50MB  
+SORT.PY	||	 >> 2015090213 Konec sort.py - 
+
+SERVERSETUP.PY	|| 02 Sep 2015 13:57:19 Konec server setup 
+SORT.PY	||	 >> 2015090213 Konec sort.py - 
+DISKGUARD.PY	|| 02 Sep 2015 13:57:19 disk usage:1000MB free from 50MB  
+DISKGUARD.PY	|| 02 Sep 2015 13:57:20 disk usage:1000MB free from 50MB !!!!!! Zacalo mazani disku :  
+SYNC.PY	|| 02 Sep 2015 13:57:20 Start of synchronisation 
+SYNC.PY		|| 02 Sep 2015 13:57:20 >> data sort path path_sortpath_data does NOT EXIST
+SORT.PY	||!02 Sep 2015 13:57:20 data source path pathpath_data does NOT EXIST
+ 
+SYNC.PY		|| 02 Sep 2015 13:57:20 >> image sort path path_sortpath_image does NOT EXIST
+SERVERSETUP.PY	|| 02 Sep 2015 13:57:20 Konec server setup 
+SYNC.PY		|| 02 Sep 2015 13:57:20 >> data sort path path_sortpath_data does NOT EXIST
+SERVERSETUP.PY	|| 02 Sep 2015 13:57:20 Konec server setup 
+SORT.PY	|| 02 Sep 2015 13:57:20 Zacatek Sortingu 
+SERVERSETUP.PY	|| 02 Sep 2015 13:57:21 Konec server setup 
+SERVERSETUP.PY	|| 02 Sep 2015 13:57:21 Zacatek server setup 
+
+SYNC.PY	|| 02 Sep 2015 13:57:21 Start of synchronisation 
+SYNC.PY		|| 02 Sep 2015 13:57:21	 >>   Start of Upload
+DISKGUARD.PY	|| 02 Sep 2015 13:57:21 disk usage:1000MB free from 50MB !!!!!! Zacalo mazani disku :  
+SERVERSETUP.PY	|| 02 Sep 2015 13:57:21 slozka path_image neexistuje
+DISKGUARD.PY	|| 02 Sep 2015 13:57:21 disk usage:1000MB free from 50MB !!!!!! Zacalo mazani disku :  
+SORT.PY	||!02 Sep 2015 13:57:21 image source path pathpath_image does NOT EXIST
+
+DISKGUARD.PY	|| 02 Sep 2015 13:57:22 disk usage:1000MB free from 50MB !!!!!! Na disku dochazi misto :  
+SORT.PY	||!02 Sep 2015 13:57:22 image source path pathpath_image does NOT EXIST
+
+DISKGUARD.PY	|| 02 Sep 2015 13:57:22 disk usage:1000MB free from 50MB !!!!!! Zacalo mazani disku :  
+SYNC.PY		|| 02 Sep 2015 13:57:22	 >>    Finish of upload 
+SORT.PY	||!02 Sep 2015 13:57:22 image source path pathpath_image does NOT EXIST
+SYNC.PY		|| 02 Sep 2015 13:57:22	 >>   Start of Upload
+SERVERSETUP.PY	|| 02 Sep 2015 13:57:22 Konec server setup 
+SYNC.PY		|| 02 Sep 2015 13:57:22 >> image sort path path_sortpath_image does NOT EXIST
+SYNC.PY		|| 02 Sep 2015 13:57:23	 >>    Finish of upload 
+SORT.PY	||!02 Sep 2015 13:57:23 image source path pathpath_image does NOT EXIST
+SORT.PY	||	 >> 2015090213 Konec sort.py - 
+SYNC.PY		|| 02 Sep 2015 13:57:23 >> image sort path path_sortpath_image does NOT EXIST
+SYNC.PY		|| 02 Sep 2015 13:57:23  >> audio sort path path_sortpath_audio does NOT EXIST
+DISKGUARD.PY	|| 02 Sep 2015 13:57:23 disk usage:1000MB free from 50MB !!!!!! Na disku dochazi misto :  
+SORT.PY	||!02 Sep 2015 13:57:23 audio source path pathpath_audio does NOT EXIST
+SYNC.PY		|| 02 Sep 2015 13:57:23	 >>    Finish of upload 
+SORT.PY	||!02 Sep 2015 13:57:23 image source path pathpath_image does NOT EXIST
+SYNC.PY	|| 02 Sep 2015 13:57:23 Internet connection is NOT available
+ 
+SORT.PY	|| 02 Sep 2015 13:57:24 Zacatek Sortingu 
+SORT.PY	||!02 Sep 2015 13:57:24 image source path pathpath_image does NOT EXIST
+
+SORT.PY	||	 >> 2015090213 Konec sort.py - 
+
+SYNC.PY		|| 02 Sep 2015 13:57:24 >> image sort path path_sortpath_image does NOT EXIST
+SERVERSETUP.PY	|| 02 Sep 2015 13:57:24 slozka path_audio neexistuje 
+SORT.PY	|| 02 Sep 2015 13:57:24 Zacatek Sortingu 
+SYNC.PY		|| 02 Sep 2015 13:57:25 >> image sort path path_sortpath_image does NOT EXIST
+SYNC.PY		|| 02 Sep 2015 13:57:25 >> image sort path path_sortpath_image does NOT EXIST
+SYNC.PY		|| 02 Sep 2015 13:57:25 >> image sort path path_sortpath_image does NOT EXIST
+SORT.PY	|| 02 Sep 2015 13:57:25 Zacatek Sortingu 
+SERVERSETUP.PY	|| 02 Sep 2015 13:57:25 Konec server setup 
+DISKGUARD.PY	|| 02 Sep 2015 13:57:25 disk usage:1000MB free from 50MB  
+SYNC.PY		|| 02 Sep 2015 13:57:25	 >>   Start of Upload
+SORT.PY	||!02 Sep 2015 13:57:25 image source path pathpath_image does NOT EXIST
+RUN.PY		|| 02 Sep 2015 13:57:25Data synchronisation system was started.
+SERVERSETUP.PY	|| 02 Sep 2015 13:57:25 Zacatek server setup 
+SYNC.PY		|| 02 Sep 2015 13:57:26	 >>   Start of Upload
+SERVERSETUP.PY	|| 02 Sep 2015 13:57:26 Konec server setup 
+
+SYNC.PY		|| 02 Sep 2015 13:57:26 >> image sort path path_sortpath_image does NOT EXIST
+DISKGUARD.PY	|| 02 Sep 2015 13:57:26 disk usage:1000MB free from 50MB  
+SERVERSETUP.PY	|| 02 Sep 2015 13:57:26 slozka path_data neexistuje 
+
+SORT.PY	||	 >> 2015090213 Konec sort.py - 
+SERVERSETUP.PY	|| 02 Sep 2015 13:57:26 slozka path_data neexistuje 
+SYNC.PY		|| 02 Sep 2015 13:57:26 >> data sort path path_sortpath_data does NOT EXIST
+SORT.PY	||	 >> 2015090213 Konec sort.py - 
+SORT.PY	|| 02 Sep 2015 13:57:27 Zacatek Sortingu 
+SERVERSETUP.PY	|| 02 Sep 2015 13:57:27 slozka path_data neexistuje 
+SERVERSETUP.PY	|| 02 Sep 2015 13:57:27 Zacatek server setup 
+DISKGUARD.PY	|| 02 Sep 2015 13:57:27 disk usage:1000MB free from 50MB !!!!!! Na disku dochazi misto :  
+SYNC.PY	|| 02 Sep 2015 13:57:27 Start of synchronisation 
+SERVERSETUP.PY	|| 02 Sep 2015 13:57:27 Zacatek server setup 
+SYNC.PY		|| 02 Sep 2015 13:57:27 >> image sort path path_sortpath_image does NOT EXIST
+DISKGUARD.PY	|| 02 Sep 2015 13:57:27 disk usage:1000MB free from 50MB !!!!!! Na disku dochazi misto :  
+SORT.PY	||!02 Sep 2015 13:57:28 image source path pathpath_image does NOT EXIST
+SERVERSETUP.PY	|| 02 Sep 2015 13:57:28 slozka path_image neexistuje
+SORT.PY	||!02 Sep 2015 13:57:28 data source path pathpath_data does NOT EXIST
+SERVERSETUP.PY	|| 02 Sep 2015 13:57:28 Zacatek server setup 
+SERVERSETUP.PY	|| 02 Sep 2015 13:57:28 Zacatek server setup 
+SYNC.PY	|| 02 Sep 2015 13:57:28 Start of synchronisation 
+SORT.PY	||!02 Sep 2015 13:57:28 audio source path pathpath_audio does NOT EXIST
+DISKGUARD.PY	|| 02 Sep 2015 13:57:28 disk usage:1000MB free from 50MB !!!!!! Na disku dochazi misto :  
+SORT.PY	||	 >> 2015090213 Konec sort.py - 
+SORT.PY	||!02 Sep 2015 13:57:28 data source path pathpath_data does NOT EXIST
