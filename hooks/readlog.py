@@ -34,7 +34,7 @@ class Log(object):
         self.file.seek(0)
         return collector
     
-    def tail(self, stop_line='', verbose=False):
+    def tail_with_line(self, stop_line='', verbose=False):
         """(object with open file mode 'r' in .file method) -> list
     
         :stop_line: Stop reading when found in file.
@@ -64,6 +64,30 @@ class Log(object):
                 if verbose:
                     print '\nReturning whole linewise reversed file.'
                 break
+        return collector
+
+    def tail(self, stop_position):
+        """(self, int) -> list
+        Return lines starting from the last until stop_position is reached.
+
+        :stop_position: Integer to where to stop in file.
+        :returns: List of lines until stop_position.
+
+        """
+        unfound = True
+        collector = []
+        linenumber = -1
+        while unfound:
+            try:
+                self.file.seek(self.line_offsets()[linenumber])
+                line = self.file.readline()
+            except:
+                pass
+            if self.file.tell() <= stop_position:
+                unfound = False
+            else:
+                collector.append(line)
+                linenumber -= 1
         return collector
     
     def last_line(self):

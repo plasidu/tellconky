@@ -1,4 +1,5 @@
 from fabric.api import cd, put, run, settings, execute
+from fabric.api import shell_env
 from time import sleep
 import os, stat
 
@@ -6,9 +7,10 @@ import os, stat
 wd = '/tmp'
 
 def bootstrap():
-    with cd(wd):
-        put('/home/sync/scripts/py/tellconky/readlog.py','.')
-        put('/home/sync/scripts/py/tellconky/mkmessage.py','.')
+    with (settings(host_string='dunewalker.local', user='takyari', key_filename='/home/takyari/.ssh/id_rsa.pub')):
+        with cd(wd):
+            put('/home/sync/scripts/py/tellconky/hooks/readlog.py','.')
+            put('/home/sync/scripts/py/tellconky/hooks/mkmessage.py','.')
 
 def send_to_pipe(pipe, message):
     fifo = open(pipe, 'w')
@@ -16,7 +18,14 @@ def send_to_pipe(pipe, message):
     fifo.flush()
     fifo.close()
 
-def getmessage():
+def getlast(logname, last_position):
+    output = ''
+    with cd(wd):
+        with (settings(host_string='dunewalker.local', user='takyari', key_filename='/home/takyari/.ssh/id_rsa.pub')):
+            output = run('python mkmessage.py last %s %s' % (logname, last_position))
+    return output
+
+def getmessage(last_position, logname='Log-RMDS-py'):
         with cd(wd):
             parts = ['start', 'end', 'heartbeat']
             for message_part in parts:
@@ -31,15 +40,16 @@ def getmessage():
                     os.mkfifo(pipe)
                 except:
                     pass
-                output = run('python mkmessage.py %s' % message_part)
-                send_to_pipe(pipe, output)
+                output = run('python mkmessage.py %s %s %s' % (message_part, logname, last_position))
+                if not output == '':
+                    send_to_pipe(pipe, output)
                 #pipes should be read by conky
             
-def test_deploy():
+def test_deploy(logname, last_position):
     with (settings(host_string='dunewalker.local', user='takyari', key_filename='/home/takyari/.ssh/id_rsa.pub')):
         execute(bootstrap)
         print 'Bootstraping done'
-        execute(getmessage)
+        execute(getmessage, last_position, logname=logname)
 
 if __name__ == '__main__':
-    test_deploy()
+    test_deploy('foo.log', 0)
