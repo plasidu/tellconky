@@ -6,8 +6,8 @@ import os, stat
 # Remote working directory
 wd = '/tmp'
 
-def bootstrap():
-    with (settings(host_string='dunewalker.local', user='takyari', key_filename='/home/takyari/.ssh/id_rsa.pub')):
+def bootstrap(hostname, username, keyfile='',):
+    with (settings(host_string=hostname, user=username, key_filename=keyfile)):
         with cd(wd):
             put('/home/sync/scripts/py/tellconky/hooks/readlog.py','.')
             put('/home/sync/scripts/py/tellconky/hooks/mkmessage.py','.')
@@ -18,24 +18,28 @@ def send_to_pipe(pipe, message):
     fifo.flush()
     fifo.close()
 
-def getlast(logname, last_position):
+def getlast(hostname, username, logname, last_position, keyfile=''):
     output = ''
     with cd(wd):
-        with (settings(host_string='dunewalker.local', user='takyari', key_filename='/home/takyari/.ssh/id_rsa.pub')):
+        with (settings(host_string=hostname, user=username, key_filename=keyfile)):
             output = run('python mkmessage.py last %s %s' % (logname, last_position))
     return output
 
-def getmessage(last_position, logname='Log-RMDS-py'):
+def getmessage(last_position, host, logname='Log-RMDS-py'):
         with cd(wd):
             parts = ['start', 'end', 'heartbeat']
             for message_part in parts:
-                pipe = '%s/%s' % (wd, message_part)
+                pipe = '%s/%s/%s' % (wd, host, message_part)
                 if os.path.isfile(pipe) and not stat.S_ISFIFO(os.stat(pipe).st_mode):
                     #file is not a fifo
                     try:
                         os.remove(pipe)
                     except Exception as ex:
                         print ex
+                try:
+                    os.mkdir('%s/%s' % (wd, host))
+                except:
+                    pass
                 try:
                     os.mkfifo(pipe)
                 except:
@@ -45,11 +49,9 @@ def getmessage(last_position, logname='Log-RMDS-py'):
                     send_to_pipe(pipe, output)
                 #pipes should be read by conky
             
-def test_deploy(logname, last_position):
-    with (settings(host_string='dunewalker.local', user='takyari', key_filename='/home/takyari/.ssh/id_rsa.pub')):
-        execute(bootstrap)
+def test_deploy(hostname, username, logname, last_position, keyfile=''):
+    with (settings(host_string=hostname, user=username, key_filename=keyfile)):
+        execute(bootstrap, hostname, username, keyfile)
         print 'Bootstraping done'
-        execute(getmessage, last_position, logname=logname)
+        execute(getmessage, last_position, hostname, logname=logname)
 
-if __name__ == '__main__':
-    test_deploy('foo.log', 0)
