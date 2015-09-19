@@ -1,5 +1,9 @@
 import random, time, sys, os
 
+if len(sys.argv) <= 1 or str(sys.argv[1]) == '--help' :
+    print 'python loggenerator.py output_file period'
+    sys.exit(0)
+
 to = sys.argv[1]
 interval = sys.argv[2]
 

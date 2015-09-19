@@ -69,6 +69,7 @@ class Log(object):
     def tail(self, stop_position):
         """(self, int) -> list
         Return lines starting from the last until stop_position is reached.
+        If stop_position is 0, 1000 lines are read to avoid memory overflow from reading too big file.
 
         :stop_position: Integer to where to stop in file.
         :returns: List of lines until stop_position.
@@ -77,7 +78,7 @@ class Log(object):
         unfound = True
         collector = []
         linenumber = -1
-        while unfound:
+        while unfound and linenumber >= -1000:
             try:
                 self.file.seek(self.line_offsets()[linenumber])
                 line = self.file.readline()

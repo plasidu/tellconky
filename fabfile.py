@@ -1,5 +1,4 @@
 from fabric.api import cd, put, run, settings, execute
-from fabric.api import shell_env
 from time import sleep
 import os, stat
 
@@ -9,8 +8,8 @@ wd = '/tmp'
 def bootstrap(hostname, username, keyfile='',):
     with (settings(host_string=hostname, user=username, key_filename=keyfile)):
         with cd(wd):
-            put('/home/sync/scripts/py/tellconky/hooks/readlog.py','.')
-            put('/home/sync/scripts/py/tellconky/hooks/mkmessage.py','.')
+            put('./hooks/readlog.py','.')
+            put('./hooks/mkmessage.py','.')
 
 def send_to_pipe(pipe, message):
     fifo = open(pipe, 'w')
@@ -53,5 +52,9 @@ def test_deploy(hostname, username, logname, last_position, keyfile=''):
     with (settings(host_string=hostname, user=username, key_filename=keyfile)):
         execute(bootstrap, hostname, username, keyfile)
         print 'Bootstraping done'
+        execute(getmessage, last_position, hostname, logname=logname)
+
+def deploy(hostname, username, logname, last_position, keyfile=''):
+    with (settings(host_string=hostname, user=username, key_filename=keyfile)):
         execute(getmessage, last_position, hostname, logname=logname)
 

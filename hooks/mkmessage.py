@@ -12,15 +12,16 @@ try:
 except:
     last_position = 0
 
-#last_message = 'SERVERSETUP.PY\t|| 02 Sep 2015 13:57:17 Zacatek server setup\n'
 
 ### SETUP
 log = readlog.Log(logname)
 raw_lines = log.tail(last_position)
-file = open('/tmp/debug', 'a')
-file.write('\nSTOP\n' + str(last_position) + str(raw_lines))
-file.close()
 regex_list = ['.*[!\s](\d+\s\w+\s\d+\s\d+:\d+:\d+)\s.*', '.*Start\sof\ssynchronisation.*', '.*Finish\sof\supload.*']
+
+### DEBUGGING
+#file = open('/tmp/debug', 'a')
+#file.write('\nSTOP\n' + str(last_position) + str(raw_lines))
+#file.close()
 
 def main(message_part, last_position):
     """Process the log file and print part specified in message_part.
@@ -35,15 +36,14 @@ def main(message_part, last_position):
         regex = regex_list[2]
     elif message_part == 'heartbeat':
         message = strftime("%d %b %Y %H:%M:%S", gmtime()) 
-        print 'heartbeat: \n%s \n' % message
+        print 'heartbeat: %s\n' % message
     elif message_part == 'last':
         print log.line_offsets()[-1]
-        #print 'mkmessage debug: ', last_message
     try:
         lines = readlog.filter_regex(raw_lines, regex)
         message = readlog.filter_time(lines[0], regex_list[0])
         if message:
-            print '%s: \n%s \n' % (message_part, message[0])
+            print '%s: %s\n' % (message_part, message[0])
     except:
         pass
 
