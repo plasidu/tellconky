@@ -7,14 +7,12 @@ A python scriptset for reading remote logs and displaying their filtered content
 * author: Tomas Prochazka (plasidu at email dot cz)
 * github: https://github.com/plasidu/tellconky
 
--------------
 Dependencies:
 -------------
 * python 2.7
 * fabric (http://www.fabfile.org/)
 * conky (http://www.conky.sourceforge.net)
 
------------
 Quickstart:
 -----------
 
