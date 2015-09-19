@@ -18,10 +18,10 @@ Dependencies:
 Quickstart:
 -----------
 
-   git clone https://github.com/plasidu/tellconky.git
-   cd tellconky
-   python tellconky.py logname username keyfile period host1 host2 .. hostN
-   conky -c tellconkyrc
+   git clone https://github.com/plasidu/tellconky.git 
+   cd tellconky 
+   python tellconky.py logname username keyfile period host1 host2 .. hostN  
+   conky -c tellconkyrc 
 
 logname: the name of the file (the remote log) to be read
 username: the user as which to login through ssh
