@@ -1,11 +1,12 @@
-#########
+---------
 tellconky
-#########
+---------
 
 A python scriptset for reading remote logs and displaying their filtered content in conky.
 
 * author: Tomas Prochazka (plasidu at email dot cz)
 * github: https://github.com/plasidu/tellconky
+* made for: https://github.com/bolidozor
 
 Dependencies:
 -------------
@@ -28,5 +29,5 @@ period: time in second after which the remote file is periodicaly read
 host1..hostN: hosts running ssh to which to connect   
 
 Tellconky.py has to be started from its directory. It send a file to /tmp on remote host and periodicaly uses it to read maximaly 1000 lines of log. After reading it stores last read position and the next run continues there.
-Remotely read content is then filtered and then writen to fifo, from which it is suppoesed to be queried by conky, watch or similiar periodicaly reading program.
+Remotely read content is then filtered written to fifo, from which it is supposed to be queried by conky, watch or similiar periodicaly reading program.
 Running tellconky.py generate tellconkyrc in current directory. This file has to be used as config by conky. 
